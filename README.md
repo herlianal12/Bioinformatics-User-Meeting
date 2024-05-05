@@ -183,11 +183,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    ```
    mamba create -n assembly
    mamba activate assembly
-   mamba install bioconda/label/cf201901::unicycler
-   mamba install bioconda/label/cf201901::quast
-   mamba install bioconda/label/cf201901::prokka
    mamba install -c bioconda prokka=1.14.6 unicycler=0.4.7 quast=5.0.2 igv= barrnap=0.9
-   mamba install bioconda/label/cf201901::barrnap
    ```
 2. **Membuat direktori baru**
    ```
