@@ -6,6 +6,7 @@ Lina Herliana, Zahra Noviana, Syam Budi Iryanto, dan Aditya Swardiana
 
 Email: hpc@brin.go.id (bantuan ELSA) atau hpc.admin@brin.go.id (bantuan teknis)
 
+Link to powerpoint: ????
 
 Tujuan: Pengguna HPC khususnya bidang bioinformatics dapat memanfaatkan fasilitas komputasi secara maksimal
 
@@ -24,8 +25,9 @@ Hal yang perlu diperhatikan sebelum hands-on
 6. Viewing directory structure
 7. Accesing local databases
 8. Obtaining raw data
-9. Assessing quality of raw data with fastqc and multiqc
-10. Downloading results
+9. Submitting job to assessing quality of raw data with fastqc and multiqc
+10. Interactive job
+11. Transferring results to local computer
 
 **OPTIONAL Unicyler assembly tutorial**
 
@@ -51,7 +53,7 @@ ssh lina008@login2.hpc.brin.go.id
 ### Membuat screen session
 screen -S training
 
-### Mengakses screen session
+### Mengakses screen session kembali setelah logout atau putus sambungan
 screen -dr training 
 ```
 3. Mengkloning repository pelatihan
@@ -72,6 +74,8 @@ mamba activate training_qc
 
 ###
 mamba install -c bioconda fastqc multiqc tree
+
+### Confirm changes: [Y/n] Y
 ### user sudah bisa menggunakan softwarenya
 ### untuk melihat software apa saja dan versi berapa yang sudah terinstall
 mamba list
@@ -97,44 +101,110 @@ cd ~
 tree Bioinformatics-User-Meeting
 ```
 
+Bioinformatics-User-Meeting
+|-- README.md
+|-- template_submision
+|   `-- contoh.sh
+`-- training
+    |-- quality_control
+    `-- raw_data
+
+5 directories, 2 files
+
+
 7. Akses database lokal untuk bioinformatics
 ```
-### list database yang sudah ada
+### list database yang sudah ada (tidak dipakai untuk training hanya informasi)
 ls /mgpfs/db/bioinformatics
+
+#HUMANN_DB  MY_CHECKM_FOLDER  MY_KRAKEN2_DB  NCBI_nt  NCBI_tax
 
 ### silahkan untuk request penambahan database dengan mengirimkan email dengan judul "Database Bioinformatics", sertakan juga link database
 ```
-8. Preparing script for submission
-
-
-## Unicyler assembly tutorial
-
-10. Download data menggunakan wget atau curl
+8. Download data menggunakan wget atau curl
 
 source: https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
-
+waktu download < 13 menit
 ```
-wget https://zenodo.org/record/940733/files/illumina_f.fq -P raw_data
-wget https://zenodo.org/record/940733/files/illumina_r.fq -P raw_data
-wget https://zenodo.org/record/940733/files/minion_2d.fq -P raw_data
-```
-
-9. Pengecekan kualitas data
-
-```
-fastqc training/raw_data/* 
+cd ~
+wget https://zenodo.org/record/940733/files/illumina_f.fq -P Bioinformatics-User-Meeting/training/raw_data
+wget https://zenodo.org/record/940733/files/illumina_r.fq -P Bioinformatics-User-Meeting/training/raw_data
+wget https://zenodo.org/record/940733/files/minion_2d.fq -P Bioinformatics-User-Meeting/training/raw_data
 ```
 
-10. Submit job
+9. Submitting job to assessing quality of raw data with fastqc and multiqc dengan sbatch
 
 ```
-sbatch quality_control.sh
+cd ~
+cd Bioinformatics-User-Meeting/template_submision
+nano contoh.sh
+sbatch contoh.sh
 squeue
 ```
 
-11. Transfer data dari lokal ke HPC Mahameru BRIN dan sebaliknya
+#!/bin/bash
+#SBATCH --job-name fastqc
+#SBATCH --partition short
+#SBATCH --ntasks 1
+#SBATCH --cpus-per-task 1
+#SBATCH --time 01:00:00
+#SBATCH --mem 1G
 
+
+cd ~
+time fastqc Bioinformatics-User-Meeting/training/raw_data/* -o Bioinformatics-User-Meeting/training/quality_control
+
+
+log dapat dilihat di slurm-XXXXX.out
+
+```
+cd ~
+cd Bioinformatics-User-Meeting/training/quality_control
+#illumina_f_fastqc.html  illumina_f_fastqc.zip  illumina_r_fastqc.html  illumina_r_fastqc.zip  minion_2d_fastqc.html  minion_2d_fastqc.zip
+```
+
+10. Interactive job submission
+
+```
+srun --partition=interactive --pty /bin/bash
+mamba activate training_qc
+cd Bioinformatics-User-Meeting/training/quality_control
+multiqc .
+exit
 ```
 
 ```
+cd ~/Bioinformatics-User-Meeting/training/quality_control
+ls
+#illumina_f_fastqc.html  illumina_f_fastqc.zip  illumina_r_fastqc.html  illumina_r_fastqc.zip  minion_2d_fastqc.html  minion_2d_fastqc.zip  multiqc_data  multiqc_report.html
+```
+
+
+11. Transfer data dari HPC Mahameru BRIN ke lokal
+
+
+```
+cd ~/Bioinformatics-User-Meeting/training/quality_control
+mkdir html
+mv *.html html/
+cd html
+ls
+#illumina_f_fastqc.html  illumina_r_fastqc.html  minion_2d_fastqc.html  multiqc_report.html
+```
+Buka terminal atau powershell yang baru
+
+```
+#contoh:
+scp -r lina008@login2.hpc.brin.go.id:~/Bioinformatics-User-Meeting/training/quality_control/html Downloads
+#Buka masing-masing html file dengan double klik maka akan muncul report qc dari masing-masing sampel
+```
+
+**OPTIONAL Unicyler assembly tutorial**
+
+1. Installing more packages
+2. Creating directories
+3. Generating assembly with unicycler
+4. Assessing assembly quality with quast
+5. Generating annotation with prokka
+6. Visualization with IGV
 
