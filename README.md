@@ -201,9 +201,16 @@ Hal yang perlu diperhatikan sebelum hands-on
    cd /mgpfs/home/lina008/Bioinformatics-User-Meeting/template_submision
    sbatch assembly.sh
    ```
+   Check apakah assembly telah selesai:
+   
 <img width="633" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/b7c60f78-03ac-4752-b9cb-cbbb73fd89cc">
 
-4. Assessing assembly quality with quast
+   Hasil:
+   <img width="647" alt="Screenshot 2024-05-05 at 21 03 44" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/c557e513-9879-40c8-a8d5-ea2f279f9eff">
+
+   
+
+5. Assessing assembly quality with quast
 
    ```
    
