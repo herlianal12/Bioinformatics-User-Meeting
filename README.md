@@ -39,8 +39,8 @@ Hal yang perlu diperhatikan sebelum hands-on
 7. Mengvisualisasikan hasil dengan IGV
 
 
-##**Tahapan**:
-1. Masuk ke HPC Mahameru BRIN menggunakan akun masing-masing melalui terminal (Mac/Linux) atau powershell (Windows)
+## **Tahapan**:
+1. **Masuk ke HPC Mahameru BRIN menggunakan akun masing-masing melalui terminal (Mac/Linux) atau powershell (Windows)**
    ```
    ssh <username>@login2.hpc.brin.go.id
    contoh:
