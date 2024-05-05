@@ -42,12 +42,12 @@ Hal yang perlu diperhatikan sebelum hands-on
 **Tahapan**:
 1. Masuk ke HPC Mahameru BRIN menggunakan akun masing-masing melalui terminal (Mac/Linux) atau powershell (Windows)
 
- ```
- ssh <username>@login2.hpc.brin.go.id
- contoh:
- ssh lina008@login2.hpc.brin.go.id
- ```
- <img width="587" alt="Screenshot 2024-05-05 at 19 38 04" src="https://github.com/hpc-mahameru/Bioinformatics-User-  Meeting/assets/57382343/e08567ec-cdf6-4a0a-b3b5-b143b906b5e2">
+```
+ssh <username>@login2.hpc.brin.go.id
+contoh:
+ssh lina008@login2.hpc.brin.go.id
+```
+<img width="587" alt="Screenshot 2024-05-05 at 19 38 04" src="https://github.com/hpc-mahameru/Bioinformatics-User-  Meeting/assets/57382343/e08567ec-cdf6-4a0a-b3b5-b143b906b5e2">
 
 2. Menggunakan bantuan screen untuk membuat beberapa sesi dan mempertahankan sesi yang ada walau koneksi terputus. User dapat menggunakan aplikasi lain seperti tmux.
 
