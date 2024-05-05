@@ -176,7 +176,9 @@ ls
 Buka terminal atau powershell yang baru untuk transfer file
 ```
 #contoh:
+
 scp -r lina008@login2.hpc.brin.go.id:~/Bioinformatics-User-Meeting/training/quality_control/html Downloads
+
 #Buka masing-masing html file dengan double klik maka akan muncul report qc dari masing-masing sampel di folder Downloads
 ```
 <img width="1438" alt="Screenshot 2024-05-05 at 20 38 59" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/17c2f071-662e-428e-8275-78eb28114ded">
@@ -196,6 +198,7 @@ mamba create -n assembly
 mamba activate assembly
 mamba install -c bioconda unicycler quast busco prokka igv
 unicycler --help
+
 ###jika unicycler tidak terinstall dengan command di atas, coba command di bawah ini
 mamba install bioconda/label/cf201901::unicycler
 ```
