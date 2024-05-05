@@ -15,7 +15,7 @@ Hal yang perlu diperhatikan sebelum hands-on
 3. Akses Internet
 
 ### **Overview**
-**Getting ready**
+**Getting ready and Assessing QC**
 1. Login
 2. Creating screen session
 3. Clonning repository
