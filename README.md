@@ -156,24 +156,24 @@ Hal yang perlu diperhatikan sebelum hands-on
     ls
     ```
     <img width="638" alt="Screenshot 2024-05-05 at 20 22 34" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/d79e79da-c759-4d58-8931-41ea83cff3a5">
+    
+    Buka terminal atau powershell yang baru untuk transfer file
 
+    Contoh:
+    ```
+    scp -r lina008@login2.hpc.brin.go.id:~/Bioinformatics-User-Meeting/training/quality_control/html Downloads
+    ```
 
-   Buka terminal atau powershell yang baru untuk transfer file
-   Contoh:
-   ```
-   scp -r lina008@login2.hpc.brin.go.id:~/Bioinformatics-User-Meeting/training/quality_control/html Downloads
-   ```
-   Buka masing-masing html file dengan double klik maka akan muncul report qc dari masing-masing sampel di folder Downloads
+    Buka masing-masing html file dengan double klik maka akan muncul report qc dari masing-masing sampel di folder Downloads
 
-   Fastqc short read
-   <img width="1438" alt="Screenshot 2024-05-05 at 20 38 59" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/17c2f071-662e-428e-8275-78eb28114ded">
+    Fastqc short read
+    <img width="1438" alt="Screenshot 2024-05-05 at 20 38 59" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/17c2f071-662e-428e-8275-78eb28114ded">
 
-   Fastqc long read
-   <img width="1431" alt="Screenshot 2024-05-05 at 20 39 18" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/a7aa06ca-6fc4-4291-832c-4476293b56d9">
+    Fastqc long read
+    <img width="1431" alt="Screenshot 2024-05-05 at 20 39 18" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/a7aa06ca-6fc4-4291-832c-4476293b56d9">
 
-
-   Multiqc result:
-   <img width="1437" alt="Screenshot 2024-05-05 at 20 38 16" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/23def188-5ddd-47d9-a1f1-7cd20b1af389">
+    Multiqc result:
+    <img width="1437" alt="Screenshot 2024-05-05 at 20 38 16" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/23def188-5ddd-47d9-a1f1-7cd20b1af389">
 
 
 
