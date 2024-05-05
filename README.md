@@ -47,6 +47,8 @@ ssh <username>@login2.hpc.brin.go.id
 contoh:
 ssh lina008@login2.hpc.brin.go.id
 ```
+<img width="587" alt="Screenshot 2024-05-05 at 19 38 04" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/e08567ec-cdf6-4a0a-b3b5-b143b906b5e2">
+
 2. Menggunakan bantuan screen untuk membuat beberapa sesi dan mempertahankan sesi yang ada walau koneksi terputus. User dapat menggunakan aplikasi lain seperti tmux.
 
 ```
@@ -102,17 +104,7 @@ tree Bioinformatics-User-Meeting
 ```
 <img width="209" alt="Screenshot 2024-05-05 at 19 32 48" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/86f77bdf-ae97-4e5d-bbfc-f0d2bc2782a7">
 
-
-7. Akses database lokal untuk bioinformatics
-```
-### list database yang sudah ada (tidak dipakai untuk training hanya informasi)
-ls /mgpfs/db/bioinformatics
-
-#HUMANN_DB  MY_CHECKM_FOLDER  MY_KRAKEN2_DB  NCBI_nt  NCBI_tax
-
-### silahkan untuk request penambahan database dengan mengirimkan email dengan judul "Database Bioinformatics", sertakan juga link database
-```
-8. Download data menggunakan wget atau curl
+7. Download data menggunakan wget atau curl
 
 source: https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
 waktu download < 13 menit
@@ -123,7 +115,7 @@ wget https://zenodo.org/record/940733/files/illumina_r.fq -P Bioinformatics-User
 wget https://zenodo.org/record/940733/files/minion_2d.fq -P Bioinformatics-User-Meeting/training/raw_data
 ```
 
-9. Submitting job to assessing quality of raw data with fastqc and multiqc dengan sbatch
+8. Submitting job to assessing quality of raw data with fastqc and multiqc dengan sbatch
 
 ```
 cd ~
@@ -154,7 +146,7 @@ cd Bioinformatics-User-Meeting/training/quality_control
 #illumina_f_fastqc.html  illumina_f_fastqc.zip  illumina_r_fastqc.html  illumina_r_fastqc.zip  minion_2d_fastqc.html  minion_2d_fastqc.zip
 ```
 
-10. Interactive job submission
+9. Interactive job submission
 
 ```
 srun --partition=interactive --pty /bin/bash
@@ -171,7 +163,7 @@ ls
 ```
 
 
-11. Transfer data dari HPC Mahameru BRIN ke lokal
+10. Transfer data dari HPC Mahameru BRIN ke lokal
 
 
 ```
@@ -210,7 +202,14 @@ cd /mgpfs/home/lina008/Bioinformatics-User-Meeting/template_submision
 sbatch assembly.sh
 ```
 4. Assessing assembly quality with quast
+5. Akses database lokal untuk bioinformatics
+```
+### list database yang sudah ada (tidak dipakai untuk training hanya informasi)
+ls /mgpfs/db/bioinformatics
+```
+<img width="792" alt="Screenshot 2024-05-05 at 19 37 05" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/571a36e0-49a9-4d15-9e07-2f0a8402ba48">
 
-5. Generating annotation with prokka
-6. Visualization with IGV
+Silahkan untuk request penambahan database dengan mengirimkan email dengan judul "Database Bioinformatics", sertakan juga link database
+6. Generating annotation with prokka
+7. Visualization with IGV
 
