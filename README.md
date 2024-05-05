@@ -124,19 +124,24 @@ wget https://zenodo.org/record/940733/files/minion_2d.fq -P Bioinformatics-User-
 ```
 cd ~
 cd Bioinformatics-User-Meeting/template_submision
-nano contoh.sh
-sbatch contoh.sh
-squeue
+less contoh.sh
 ```
 
 <img width="834" alt="Screenshot 2024-05-05 at 19 45 45" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/cc6659da-3e08-4ffb-8ac4-3d201ee14be0">
+
+```
+sbatch contoh.sh
+squeue
+```
 
 Hasil:
 ```
 cd ~
 cd Bioinformatics-User-Meeting/training/quality_control
-#illumina_f_fastqc.html  illumina_f_fastqc.zip  illumina_r_fastqc.html  illumina_r_fastqc.zip  minion_2d_fastqc.html  minion_2d_fastqc.zip
+ls
 ```
+<img width="495" alt="Screenshot 2024-05-05 at 19 59 36" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/5e0aa0e9-ffec-4dc7-ac11-1e8d52897614">
+
 
 9. Menggunakan interaktif job submission
     
@@ -194,6 +199,9 @@ mkdir Bioinformatics-User-Meeting/training/assembly
 cd /mgpfs/home/lina008/Bioinformatics-User-Meeting/template_submision
 sbatch assembly.sh
 ```
+<img width="631" alt="Screenshot 2024-05-05 at 20 02 03" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/ed8e65a7-28de-429a-9404-16b504c31b21">
+
+
 4. Assessing assembly quality with quast
 5. Akses database lokal untuk bioinformatics
 ```
