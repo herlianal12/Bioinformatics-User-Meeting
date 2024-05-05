@@ -188,7 +188,8 @@ Hal yang perlu diperhatikan sebelum hands-on
    mamba install bioconda/label/cf201901::unicycler
    mamba install bioconda/label/cf201901::quast
    mamba install bioconda/label/cf201901::prokka
-   mamba install bioconda/label/cf201901::igv
+   mamba install -c bioconda prokka=1.14.6 unicycler=0.4.7 quast=5.0.2 igv= barrnap=0.9
+   mamba install bioconda/label/cf201901::barrnap
    ```
 2. Creating directories
    ```
@@ -234,8 +235,25 @@ Hal yang perlu diperhatikan sebelum hands-on
 
    Silahkan untuk melakukan permohonan penambahan database dengan mengirimkan email dengan judul "Database Bioinformatics", sertakan juga link database
 
-6. Generating annotation with prokka
-   
+7. Generating annotation with prokka
+   ```
+   #export LC_ALL=C
+   cd ~/Bioinformatics-User-Meeting/template_submision
+   sbatch annotation.sh
+   cd ~/Bioinformatics-User-Meeting/training/annotation
+   ls -lh
+   ```
+   <img width="501" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/5503011d-49d1-4ded-a074-fd3295efccd6">
+
 
 8. Visualization with IGV
+
+   - Download IGV di laptop masing-masing: https://igv.org/doc/desktop/#DownloadPage/
+   - Transfer folder annotation dari HPC ke folder di laptop masing-masing seperti contoh sebelumnya
+   - Transfer file assembly.fasta dari HPC ke folder di laptop masing-masing seperti contoh sebelumnya
+   - Buka software IGV dengan double click icon IGV
+   - Pilih Genomes --> Load Genome from file --> pilih assembly.fasta
+   - Pilih File --> Load from file --> pilih PROKKA_05052024.gff
+     <img width="1330" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/c788d652-348f-468c-bf6b-e6513b90b999">
+
 
