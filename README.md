@@ -185,11 +185,10 @@ Hal yang perlu diperhatikan sebelum hands-on
    ```
    mamba create -n assembly
    mamba activate assembly
-   mamba install -c bioconda unicycler quast busco prokka igv
-   unicycler --help
-
-   ###jika unicycler tidak terinstall dengan command di atas, coba command di bawah ini
    mamba install bioconda/label/cf201901::unicycler
+   mamba install bioconda/label/cf201901::quast
+   mamba install bioconda/label/cf201901::prokka
+   mamba install bioconda/label/cf201901::igv
    ```
 2. Creating directories
    ```
@@ -206,15 +205,24 @@ Hal yang perlu diperhatikan sebelum hands-on
 <img width="633" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/b7c60f78-03ac-4752-b9cb-cbbb73fd89cc">
 
    Hasil:
-   <img width="647" alt="Screenshot 2024-05-05 at 21 03 44" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/c557e513-9879-40c8-a8d5-ea2f279f9eff">
+   
+   <img width="647" alt="Screenshot 2024-05-05 at 21 03 44" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/e077df04-a326-4081-a873-72c58a2ca569">
 
    
 
 5. Assessing assembly quality with quast
 
    ```
-   
+   cd ~/Bioinformatics-User-Meeting/template_submision
+   sbatch quality_assembly.sh
+   cd ~/Bioinformatics-User-Meeting/training/quality_assembly
+   ls
    ```
+<img width="701" alt="Screenshot 2024-05-05 at 21 16 32" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/c9fdd7fc-2a89-49fe-bc36-20ac310a0fb8">
+
+   Hasil:
+<img width="1104" alt="Screenshot 2024-05-05 at 21 18 10" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/0754f487-470f-422f-9511-d24df99a3da7">
+
 
 6. Akses database lokal untuk bioinformatics
    ```
@@ -227,6 +235,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    Silahkan untuk melakukan permohonan penambahan database dengan mengirimkan email dengan judul "Database Bioinformatics", sertakan juga link database
 
 6. Generating annotation with prokka
+   
 
-7. Visualization with IGV
+8. Visualization with IGV
 
