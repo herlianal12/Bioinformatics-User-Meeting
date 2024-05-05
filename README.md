@@ -101,14 +101,14 @@ mkdir raw_data quality_control
 cd ~
 ```
 
-6. Struktur direktori
+6. Melihat struktur direktori
 
 ```
 tree Bioinformatics-User-Meeting
 ```
 <img width="209" alt="Screenshot 2024-05-05 at 19 32 48" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/86f77bdf-ae97-4e5d-bbfc-f0d2bc2782a7">
 
-7. Download data menggunakan wget atau curl
+7. Mengunduh data mentah dengan wget
 
 source: https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
 waktu unduh data < 13 menit
@@ -119,8 +119,8 @@ wget https://zenodo.org/record/940733/files/illumina_r.fq -P Bioinformatics-User
 wget https://zenodo.org/record/940733/files/minion_2d.fq -P Bioinformatics-User-Meeting/training/raw_data
 ```
 
-8. Submitting job to assessing quality of raw data with fastqc and multiqc dengan sbatch
-
+8. Mengirimkan job untuk mengevaluasi kualitas dengan sbatch
+   
 ```
 cd ~
 cd Bioinformatics-User-Meeting/template_submision
@@ -131,14 +131,15 @@ squeue
 
 <img width="834" alt="Screenshot 2024-05-05 at 19 45 45" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/cc6659da-3e08-4ffb-8ac4-3d201ee14be0">
 
+Hasil:
 ```
 cd ~
 cd Bioinformatics-User-Meeting/training/quality_control
 #illumina_f_fastqc.html  illumina_f_fastqc.zip  illumina_r_fastqc.html  illumina_r_fastqc.zip  minion_2d_fastqc.html  minion_2d_fastqc.zip
 ```
 
-9. Interactive job submission
-
+9. Menggunakan interaktif job submission
+    
 ```
 srun --partition=interactive --pty /bin/bash
 mamba activate training_qc
@@ -146,7 +147,7 @@ cd Bioinformatics-User-Meeting/training/quality_control
 multiqc .
 exit
 ```
-
+Hasil:
 ```
 cd ~/Bioinformatics-User-Meeting/training/quality_control
 ls
@@ -156,7 +157,7 @@ ls
 
 10. Transfer data dari HPC Mahameru BRIN ke lokal
 
-
+Memindahkan file html ke folder baru dengan nama html
 ```
 cd ~/Bioinformatics-User-Meeting/training/quality_control
 mkdir html
@@ -165,7 +166,8 @@ cd html
 ls
 #illumina_f_fastqc.html  illumina_r_fastqc.html  minion_2d_fastqc.html  multiqc_report.html
 ```
-Buka terminal atau powershell yang baru
+
+Buka terminal atau powershell yang baru untuk transfer file
 
 ```
 #contoh:
