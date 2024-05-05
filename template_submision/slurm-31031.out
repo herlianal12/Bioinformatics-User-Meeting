@@ -1,0 +1,73 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+null
+null
+Started analysis of illumina_f.fq
+null
+Approx 5% complete for illumina_f.fq
+Approx 10% complete for illumina_f.fq
+Approx 15% complete for illumina_f.fq
+Approx 20% complete for illumina_f.fq
+Approx 25% complete for illumina_f.fq
+Approx 30% complete for illumina_f.fq
+Approx 35% complete for illumina_f.fq
+Approx 40% complete for illumina_f.fq
+Approx 45% complete for illumina_f.fq
+Approx 50% complete for illumina_f.fq
+Approx 55% complete for illumina_f.fq
+Approx 60% complete for illumina_f.fq
+Approx 65% complete for illumina_f.fq
+Approx 70% complete for illumina_f.fq
+Approx 75% complete for illumina_f.fq
+Approx 80% complete for illumina_f.fq
+Approx 85% complete for illumina_f.fq
+Approx 90% complete for illumina_f.fq
+Approx 95% complete for illumina_f.fq
+Approx 100% complete for illumina_f.fq
+Analysis complete for illumina_f.fq
+Started analysis of illumina_r.fq
+Approx 5% complete for illumina_r.fq
+Approx 10% complete for illumina_r.fq
+Approx 15% complete for illumina_r.fq
+Approx 20% complete for illumina_r.fq
+Approx 25% complete for illumina_r.fq
+Approx 30% complete for illumina_r.fq
+Approx 35% complete for illumina_r.fq
+Approx 40% complete for illumina_r.fq
+Approx 45% complete for illumina_r.fq
+Approx 50% complete for illumina_r.fq
+Approx 55% complete for illumina_r.fq
+Approx 60% complete for illumina_r.fq
+Approx 65% complete for illumina_r.fq
+Approx 70% complete for illumina_r.fq
+Approx 75% complete for illumina_r.fq
+Approx 80% complete for illumina_r.fq
+Approx 85% complete for illumina_r.fq
+Approx 90% complete for illumina_r.fq
+Approx 95% complete for illumina_r.fq
+Approx 100% complete for illumina_r.fq
+Analysis complete for illumina_r.fq
+Started analysis of minion_2d.fq
+Approx 5% complete for minion_2d.fq
+Approx 15% complete for minion_2d.fq
+Approx 20% complete for minion_2d.fq
+Approx 30% complete for minion_2d.fq
+Approx 35% complete for minion_2d.fq
+Approx 45% complete for minion_2d.fq
+Approx 55% complete for minion_2d.fq
+Approx 60% complete for minion_2d.fq
+Approx 70% complete for minion_2d.fq
+Approx 75% complete for minion_2d.fq
+Approx 85% complete for minion_2d.fq
+Approx 90% complete for minion_2d.fq
+Analysis complete for minion_2d.fq
+
+real	0m40.470s
+user	0m41.970s
+sys	0m1.681s

@@ -1,16 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name bgzip
+#SBATCH --job-name fastqc
 #SBATCH --partition short
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 1
-#SBATCH --time 02:00:00
-#SBATCH --mem 10G
+#SBATCH --time 01:00:00
+#SBATCH --mem 1G
 
 
-INDIR=/mgpfs/home/lina008/mucilage/raw_data/fastq_files
-
-for i in ${INDIR}/SRR196002*.fastq
-do 
-bgzip ${i}
-done
-
+cd ~
+time fastqc Bioinformatics-User-Meeting/training/raw_data/* -o Bioinformatics-User-Meeting/training/quality_control
