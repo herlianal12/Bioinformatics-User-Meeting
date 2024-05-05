@@ -202,16 +202,13 @@ Hal yang perlu diperhatikan sebelum hands-on
    sbatch assembly.sh
    ```
    Check apakah assembly telah selesai:
-   
-<img width="633" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/b7c60f78-03ac-4752-b9cb-cbbb73fd89cc">
+   <img width="633" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/b7c60f78-03ac-4752-b9cb-cbbb73fd89cc">
 
    Hasil:
-   
    <img width="647" alt="Screenshot 2024-05-05 at 21 03 44" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/e077df04-a326-4081-a873-72c58a2ca569">
 
    
-
-5. Assessing assembly quality with quast
+4. Mengevaluasi kualitas assembly dengan quast
 
    ```
    cd ~/Bioinformatics-User-Meeting/template_submision
@@ -225,7 +222,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    <img width="1104" alt="Screenshot 2024-05-05 at 21 18 10" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/0754f487-470f-422f-9511-d24df99a3da7">
 
 
-7. Akses database lokal untuk bioinformatics
+5. Akses database lokal untuk bioinformatics
    ```
    ### list database yang sudah ada (tidak dipakai untuk training hanya informasi)
    ls /mgpfs/db/bioinformatics
@@ -234,7 +231,7 @@ Hal yang perlu diperhatikan sebelum hands-on
 
    Silahkan untuk melakukan permohonan penambahan database dengan mengirimkan email dengan judul "Database Bioinformatics", sertakan juga link database
 
-8. Generating annotation with prokka
+6. Melakukan anotasi dengan prokka
    ```
    cd ~/Bioinformatics-User-Meeting/template_submision
    sbatch annotation.sh
@@ -244,7 +241,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    <img width="501" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/5503011d-49d1-4ded-a074-fd3295efccd6">
 
 
-9. Visualisasi anotasi dengan IGV
+7. Visualisasi anotasi dengan IGV
 
    - Download IGV di laptop masing-masing: https://igv.org/doc/desktop/#DownloadPage/
    - Transfer folder annotation dari HPC ke folder di laptop masing-masing seperti contoh sebelumnya
