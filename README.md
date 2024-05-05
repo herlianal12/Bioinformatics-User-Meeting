@@ -42,12 +42,12 @@ Hal yang perlu diperhatikan sebelum hands-on
 **Tahapan**:
 1. Masuk ke HPC Mahameru BRIN menggunakan akun masing-masing melalui terminal (Mac/Linux) atau powershell (Windows)
 
-```
-ssh <username>@login2.hpc.brin.go.id
-contoh:
-ssh lina008@login2.hpc.brin.go.id
-```
-<img width="587" alt="Screenshot 2024-05-05 at 19 38 04" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/e08567ec-cdf6-4a0a-b3b5-b143b906b5e2">
+ ```
+ ssh <username>@login2.hpc.brin.go.id
+ contoh:
+ ssh lina008@login2.hpc.brin.go.id
+ ```
+ <img width="587" alt="Screenshot 2024-05-05 at 19 38 04" src="https://github.com/hpc-mahameru/Bioinformatics-User-  Meeting/assets/57382343/e08567ec-cdf6-4a0a-b3b5-b143b906b5e2">
 
 2. Menggunakan bantuan screen untuk membuat beberapa sesi dan mempertahankan sesi yang ada walau koneksi terputus. User dapat menggunakan aplikasi lain seperti tmux.
 
@@ -78,9 +78,13 @@ mamba activate training_qc
 mamba install -c bioconda fastqc multiqc tree
 
 ### Confirm changes: [Y/n] Y
-### user sudah bisa menggunakan softwarenya
+
 ### untuk melihat software apa saja dan versi berapa yang sudah terinstall
 mamba list
+
+### untuk mengecek apakah tools sudah bisa digunakan
+fastqc --help
+multiqc --help
 ```
 Untuk lebih mendetail dapat dipelajari link berikut https://conda.io/projects/conda/en/latest/user-guide/getting-started.html
 dan https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf
@@ -107,7 +111,7 @@ tree Bioinformatics-User-Meeting
 7. Download data menggunakan wget atau curl
 
 source: https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
-waktu download < 13 menit
+waktu unduh data < 13 menit
 ```
 cd ~
 wget https://zenodo.org/record/940733/files/illumina_f.fq -P Bioinformatics-User-Meeting/training/raw_data
@@ -125,20 +129,7 @@ sbatch contoh.sh
 squeue
 ```
 
-#!/bin/bash
-#SBATCH --job-name fastqc
-#SBATCH --partition short
-#SBATCH --ntasks 1
-#SBATCH --cpus-per-task 1
-#SBATCH --time 01:00:00
-#SBATCH --mem 1G
-
-
-cd ~
-time fastqc Bioinformatics-User-Meeting/training/raw_data/* -o Bioinformatics-User-Meeting/training/quality_control
-
-
-log dapat dilihat di slurm-XXXXX.out
+<img width="834" alt="Screenshot 2024-05-05 at 19 45 45" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/cc6659da-3e08-4ffb-8ac4-3d201ee14be0">
 
 ```
 cd ~
