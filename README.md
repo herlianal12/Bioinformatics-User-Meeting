@@ -40,7 +40,7 @@ Hal yang perlu diperhatikan sebelum hands-on
 
 
 ## **Tahapan**:
-1. **Masuk ke HPC Mahameru BRIN menggunakan akun masing-masing melalui terminal (Mac/Linux) atau powershell (Windows)**
+**1. Masuk ke HPC Mahameru BRIN menggunakan akun masing-masing melalui terminal (Mac/Linux) atau powershell (Windows)**
    ```
    ssh <username>@login2.hpc.brin.go.id
    contoh:
