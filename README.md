@@ -201,10 +201,10 @@ Hal yang perlu diperhatikan sebelum hands-on
    cd /mgpfs/home/lina008/Bioinformatics-User-Meeting/template_submision
    sbatch assembly.sh
    ```
-   Check apakah assembly telah selesai:
+   Check log dan hasil assembly:
+   
    <img width="633" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/b7c60f78-03ac-4752-b9cb-cbbb73fd89cc">
 
-   Hasil:
    <img width="647" alt="Screenshot 2024-05-05 at 21 03 44" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/e077df04-a326-4081-a873-72c58a2ca569">
 
    
