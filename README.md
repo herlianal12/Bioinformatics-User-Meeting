@@ -190,6 +190,8 @@ scp -r lina008@login2.hpc.brin.go.id:~/Bioinformatics-User-Meeting/training/qual
 <img width="1437" alt="Screenshot 2024-05-05 at 20 38 16" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/23def188-5ddd-47d9-a1f1-7cd20b1af389">
 
 
+
+
 **OPTIONAL Unicyler assembly tutorial**
 
 1. Creating a new environment and installing more packages
@@ -216,11 +218,16 @@ sbatch assembly.sh
 
 4. Assessing assembly quality with quast
 
-5. Akses database lokal untuk bioinformatics
-```
-### list database yang sudah ada (tidak dipakai untuk training hanya informasi)
-ls /mgpfs/db/bioinformatics
-```
+   ```
+   
+   ```
+
+6. Akses database lokal untuk bioinformatics
+   ```
+   ### list database yang sudah ada (tidak dipakai untuk training hanya informasi)
+   ls /mgpfs/db/bioinformatics
+   ```
+   
 <img width="580" alt="Screenshot 2024-05-05 at 20 09 49" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/c73acd11-1c5c-42d5-b246-3160962559ff">
 
 Silahkan untuk melakukan permohonan penambahan database dengan mengirimkan email dengan judul "Database Bioinformatics", sertakan juga link database
