@@ -31,7 +31,8 @@ Hal yang perlu diperhatikan sebelum hands-on
 
 **OPTIONAL Unicyler assembly tutorial**
 
-1. Installing more packages
+1. Installing packages
+
 2. Creating directories
 3. Generating assembly with unicycler
 4. Assessing assembly quality with quast
@@ -201,10 +202,25 @@ scp -r lina008@login2.hpc.brin.go.id:~/Bioinformatics-User-Meeting/training/qual
 
 **OPTIONAL Unicyler assembly tutorial**
 
-1. Installing more packages
+1. Creating a new environment and installing more packages
+```
+mamba create -n assembly
+mamba activate assembly
+mamba install -c bioconda unicycler quast busco prokka igv
+mamba install bioconda/label/cf201901::unicycler
+```
 2. Creating directories
+```
+cd ~
+mkdir Bioinformatics-User-Meeting/training/assembly
+```
 3. Generating assembly with unicycler
+```
+cd /mgpfs/home/lina008/Bioinformatics-User-Meeting/template_submision
+sbatch assembly.sh
+```
 4. Assessing assembly quality with quast
+
 5. Generating annotation with prokka
 6. Visualization with IGV
 
