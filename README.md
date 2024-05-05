@@ -187,6 +187,8 @@ scp -r lina008@login2.hpc.brin.go.id:~/Bioinformatics-User-Meeting/training/qual
 mamba create -n assembly
 mamba activate assembly
 mamba install -c bioconda unicycler quast busco prokka igv
+unicycler --help
+###jika unicycler tidak terinstall dengan command di atas, coba command di bawah ini
 mamba install bioconda/label/cf201901::unicycler
 ```
 2. Creating directories
@@ -199,8 +201,7 @@ mkdir Bioinformatics-User-Meeting/training/assembly
 cd /mgpfs/home/lina008/Bioinformatics-User-Meeting/template_submision
 sbatch assembly.sh
 ```
-<img width="631" alt="Screenshot 2024-05-05 at 20 02 03" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/ed8e65a7-28de-429a-9404-16b504c31b21">
-
+<img width="633" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/b7c60f78-03ac-4752-b9cb-cbbb73fd89cc">
 
 4. Assessing assembly quality with quast
 5. Akses database lokal untuk bioinformatics
