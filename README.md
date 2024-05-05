@@ -26,11 +26,11 @@ Hal yang perlu diperhatikan sebelum hands-on
 8. Preparing script for submission
 
 **Unicyler assembly tutorial**
-9. Obtaining raw data
-10. Assesing quality of raw data with fastqc and multiqc
-11. Generating assembly with unicycler
-12. Assessing assembly quality with quast
-13. Generating annotation with prokka
+9. Obtaining raw data \
+10. Assesing quality of raw data with fastqc and multiqc \
+11. Generating assembly with unicycler \
+12. Assessing assembly quality with quast \
+13. Generating annotation with prokka \
 14. Visualization with IGV
 
 
