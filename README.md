@@ -219,13 +219,13 @@ Hal yang perlu diperhatikan sebelum hands-on
    cd ~/Bioinformatics-User-Meeting/training/quality_assembly
    ls
    ```
-<img width="701" alt="Screenshot 2024-05-05 at 21 16 32" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/c9fdd7fc-2a89-49fe-bc36-20ac310a0fb8">
-
+   <img width="701" alt="Screenshot 2024-05-05 at 21 16 32" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/c9fdd7fc-2a89-49fe-bc36-20ac310a0fb8">
+   
    Hasil:
-<img width="1104" alt="Screenshot 2024-05-05 at 21 18 10" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/0754f487-470f-422f-9511-d24df99a3da7">
+   <img width="1104" alt="Screenshot 2024-05-05 at 21 18 10" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/0754f487-470f-422f-9511-d24df99a3da7">
 
 
-6. Akses database lokal untuk bioinformatics
+7. Akses database lokal untuk bioinformatics
    ```
    ### list database yang sudah ada (tidak dipakai untuk training hanya informasi)
    ls /mgpfs/db/bioinformatics
@@ -234,7 +234,7 @@ Hal yang perlu diperhatikan sebelum hands-on
 
    Silahkan untuk melakukan permohonan penambahan database dengan mengirimkan email dengan judul "Database Bioinformatics", sertakan juga link database
 
-7. Generating annotation with prokka
+8. Generating annotation with prokka
    ```
    cd ~/Bioinformatics-User-Meeting/template_submision
    sbatch annotation.sh
@@ -244,7 +244,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    <img width="501" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/5503011d-49d1-4ded-a074-fd3295efccd6">
 
 
-8. Visualisasi anotasi dengan IGV
+9. Visualisasi anotasi dengan IGV
 
    - Download IGV di laptop masing-masing: https://igv.org/doc/desktop/#DownloadPage/
    - Transfer folder annotation dari HPC ke folder di laptop masing-masing seperti contoh sebelumnya
