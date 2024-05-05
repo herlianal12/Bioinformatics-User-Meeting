@@ -170,8 +170,8 @@ mv *.html html/
 cd html
 ls
 ```
+<img width="638" alt="Screenshot 2024-05-05 at 20 22 34" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/d79e79da-c759-4d58-8931-41ea83cff3a5">
 
-<img width="516" alt="Screenshot 2024-05-05 at 20 16 08" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/0f951437-bff9-419d-85b0-908d94dd5ccb">
 
 Buka terminal atau powershell yang baru untuk transfer file
 ```
