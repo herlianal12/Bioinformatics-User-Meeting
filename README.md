@@ -25,7 +25,7 @@ Hal yang perlu diperhatikan sebelum hands-on
 6. Melihat struktur direktori
 8. Mengunduh data mentah (raw data)
 9. Mengirimkan job dengan sbatch
-10. Menggunakan interaktif job
+10. Menggunakan interaktif job submission
 11. Mentransfer atau mengunduh file dari HPC ke komputer user
 
 **OPTIONAL Unicyler assembly tutorial**
@@ -230,14 +230,12 @@ Hal yang perlu diperhatikan sebelum hands-on
    ### list database yang sudah ada (tidak dipakai untuk training hanya informasi)
    ls /mgpfs/db/bioinformatics
    ```
-   
-<img width="580" alt="Screenshot 2024-05-05 at 20 09 49" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/c73acd11-1c5c-42d5-b246-3160962559ff">
+   <img width="580" alt="Screenshot 2024-05-05 at 20 09 49" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/c73acd11-1c5c-42d5-b246-3160962559ff">
 
    Silahkan untuk melakukan permohonan penambahan database dengan mengirimkan email dengan judul "Database Bioinformatics", sertakan juga link database
 
 7. Generating annotation with prokka
    ```
-   #export LC_ALL=C
    cd ~/Bioinformatics-User-Meeting/template_submision
    sbatch annotation.sh
    cd ~/Bioinformatics-User-Meeting/training/annotation
@@ -246,7 +244,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    <img width="501" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/5503011d-49d1-4ded-a074-fd3295efccd6">
 
 
-8. Visualization with IGV
+8. Visualisasi anotasi dengan IGV
 
    - Download IGV di laptop masing-masing: https://igv.org/doc/desktop/#DownloadPage/
    - Transfer folder annotation dari HPC ke folder di laptop masing-masing seperti contoh sebelumnya
