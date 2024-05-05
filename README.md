@@ -25,7 +25,7 @@ Hal yang perlu diperhatikan sebelum hands-on
 7. Accesing local databases
 8. Preparing script for submission
 
-#Unicyler assembly tutorial#
+**Unicyler assembly tutorial**
 9. Obtaining raw data
 10. Assesing quality of raw data with fastqc and multiqc
 11. Generating assembly with unicycler
