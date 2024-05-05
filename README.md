@@ -23,10 +23,10 @@ Hal yang perlu diperhatikan sebelum hands-on
 4. Membuat environment and menginstall packages/software
 5. Membuat direktori
 6. Melihat struktur direktori
-8. Mengunduh data mentah (raw data)
-9. Mengirimkan job dengan sbatch
-10. Menggunakan interaktif job submission
-11. Mentransfer atau mengunduh file dari HPC ke komputer user
+7. Mengunduh data mentah (raw data)
+8. Mengirimkan job dengan sbatch
+9. Menggunakan interaktif job submission
+10. Mentransfer atau mengunduh file dari HPC ke komputer user
 
 **OPTIONAL Unicyler assembly tutorial**
 
@@ -40,7 +40,7 @@ Hal yang perlu diperhatikan sebelum hands-on
 
 
 ## **Tahapan**:
-**1. Masuk ke HPC Mahameru BRIN menggunakan akun masing-masing melalui terminal (Mac/Linux) atau powershell (Windows)**
+1. **Masuk ke HPC Mahameru BRIN menggunakan akun masing-masing melalui terminal (Mac/Linux) atau powershell (Windows)**
    ```
    ssh <username>@login2.hpc.brin.go.id
    contoh:
@@ -48,7 +48,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    ```
    <img width="587" alt="Screenshot 2024-05-05 at 19 38 04" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/f0b88b62-582b-4574-b894-fdf129bab0c4">
 
-2. Menggunakan bantuan screen untuk membuat beberapa sesi dan mempertahankan sesi yang ada walau koneksi terputus. User dapat menggunakan aplikasi lain seperti tmux.
+2. **Menggunakan bantuan screen untuk membuat beberapa sesi dan mempertahankan sesi yang ada walau koneksi terputus. User dapat menggunakan aplikasi lain seperti tmux.**
    ```
    ### Membuat screen session
    screen -S training
@@ -56,11 +56,11 @@ Hal yang perlu diperhatikan sebelum hands-on
    ### Mengakses screen session kembali setelah logout atau putus sambungan
    screen -dr training
    ```
-3. Mengkloning repository pelatihan
+3. **Mengkloning repository pelatihan**
    ```
    git clone git@github.com:hpc-mahameru/Bioinformatics-User-Meeting.git
    ```
-4. Membuat environment (tempat menginstall software) di akun user menggunakan Miniforge3 (mamba dan conda)
+4. **Membuat environment (tempat menginstall software) di akun user menggunakan Miniforge3 (mamba dan conda)**
    Tools atau software bioinformatics dapat dilihat pada https://anaconda.org/search
    ```
    module avail
@@ -82,7 +82,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    Untuk lebih mendetail dapat dipelajari link berikut https://conda.io/projects/conda/en/latest/user-guide/getting-started.html dan https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf
 
 
-5. Membuat folder projek untuk menyimpan data input dan output
+5. **Membuat folder projek untuk menyimpan data input dan output**
    ```
    pwd
    cd Bioinformatics-User-Meeting
@@ -92,13 +92,13 @@ Hal yang perlu diperhatikan sebelum hands-on
    cd ~
    ```
 
-6. Melihat struktur direktori
+6. **Melihat struktur direktori**
    ```
    tree Bioinformatics-User-Meeting
    ```
-<img width="209" alt="Screenshot 2024-05-05 at 19 32 48" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/86f77bdf-ae97-4e5d-bbfc-f0d2bc2782a7">
+   <img width="209" alt="Screenshot 2024-05-05 at 19 32 48" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/86f77bdf-ae97-4e5d-bbfc-f0d2bc2782a7">
 
-7. Mengunduh data mentah dengan wget
+7. **Mengunduh data mentah dengan wget**
    source: https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
    waktu unduh data < 13 menit
    ```
@@ -108,14 +108,13 @@ Hal yang perlu diperhatikan sebelum hands-on
    wget https://zenodo.org/record/940733/files/minion_2d.fq -P Bioinformatics-User-Meeting/training/raw_data
    ```
 
-8. Mengirimkan job untuk mengevaluasi kualitas dengan sbatch
+8. **Mengirimkan job untuk mengevaluasi kualitas dengan sbatch**
    ```
    cd ~
    cd Bioinformatics-User-Meeting/template_submision
    less contoh.sh
    ```
-
-<img width="834" alt="Screenshot 2024-05-05 at 19 45 45" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/cc6659da-3e08-4ffb-8ac4-3d201ee14be0">
+   <img width="834" alt="Screenshot 2024-05-05 at 19 45 45" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/cc6659da-3e08-4ffb-8ac4-3d201ee14be0">
 
    ```
    sbatch contoh.sh
@@ -127,10 +126,10 @@ Hal yang perlu diperhatikan sebelum hands-on
    cd Bioinformatics-User-Meeting/training/quality_control
    ls
    ```
-<img width="495" alt="Screenshot 2024-05-05 at 19 59 36" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/5e0aa0e9-ffec-4dc7-ac11-1e8d52897614">
+   <img width="495" alt="Screenshot 2024-05-05 at 19 59 36" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/5e0aa0e9-ffec-4dc7-ac11-1e8d52897614">
 
 
-9. Menggunakan interaktif job submission
+9. **Menggunakan interaktif job submission**
     ```
     srun --partition=interactive --pty /bin/bash
     mamba activate training_qc
@@ -144,10 +143,10 @@ Hal yang perlu diperhatikan sebelum hands-on
    cd ~/Bioinformatics-User-Meeting/training/quality_control
    ls
    ```
-<img width="594" alt="Screenshot 2024-05-05 at 20 14 12" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/83d72052-42d0-4c89-b4ca-90eb663ff2f2">
+   <img width="594" alt="Screenshot 2024-05-05 at 20 14 12" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/83d72052-42d0-4c89-b4ca-90eb663ff2f2">
 
 
-10. Transfer data dari HPC Mahameru BRIN ke lokal
+10. **Transfer data dari HPC Mahameru BRIN ke lokal**
     Memindahkan file html ke folder baru dengan nama html
     ```
     cd ~/Bioinformatics-User-Meeting/training/quality_control
@@ -156,7 +155,7 @@ Hal yang perlu diperhatikan sebelum hands-on
     cd html
     ls
     ```
-<img width="638" alt="Screenshot 2024-05-05 at 20 22 34" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/d79e79da-c759-4d58-8931-41ea83cff3a5">
+    <img width="638" alt="Screenshot 2024-05-05 at 20 22 34" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/d79e79da-c759-4d58-8931-41ea83cff3a5">
 
 
    Buka terminal atau powershell yang baru untuk transfer file
@@ -167,21 +166,20 @@ Hal yang perlu diperhatikan sebelum hands-on
    Buka masing-masing html file dengan double klik maka akan muncul report qc dari masing-masing sampel di folder Downloads
 
    Fastqc short read
-<img width="1438" alt="Screenshot 2024-05-05 at 20 38 59" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/17c2f071-662e-428e-8275-78eb28114ded">
+   <img width="1438" alt="Screenshot 2024-05-05 at 20 38 59" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/17c2f071-662e-428e-8275-78eb28114ded">
 
    Fastqc long read
-<img width="1431" alt="Screenshot 2024-05-05 at 20 39 18" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/a7aa06ca-6fc4-4291-832c-4476293b56d9">
+   <img width="1431" alt="Screenshot 2024-05-05 at 20 39 18" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/a7aa06ca-6fc4-4291-832c-4476293b56d9">
 
 
    Multiqc result:
-<img width="1437" alt="Screenshot 2024-05-05 at 20 38 16" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/23def188-5ddd-47d9-a1f1-7cd20b1af389">
+   <img width="1437" alt="Screenshot 2024-05-05 at 20 38 16" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/23def188-5ddd-47d9-a1f1-7cd20b1af389">
 
 
 
+## **OPTIONAL Unicyler assembly tutorial**
 
-**OPTIONAL Unicyler assembly tutorial**
-
-1. Creating a new environment and installing more packages
+1. **Membuat environment baru dan menginstall software untuk assembly**
    ```
    mamba create -n assembly
    mamba activate assembly
@@ -191,12 +189,12 @@ Hal yang perlu diperhatikan sebelum hands-on
    mamba install -c bioconda prokka=1.14.6 unicycler=0.4.7 quast=5.0.2 igv= barrnap=0.9
    mamba install bioconda/label/cf201901::barrnap
    ```
-2. Creating directories
+2. **Membuat direktori baru**
    ```
    cd ~
    mkdir Bioinformatics-User-Meeting/training/assembly
    ```
-3. Generating assembly with unicycler
+3. **Melakukan assembly dengan unicycler**
    ```
    cd /mgpfs/home/lina008/Bioinformatics-User-Meeting/template_submision
    sbatch assembly.sh
@@ -208,7 +206,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    <img width="647" alt="Screenshot 2024-05-05 at 21 03 44" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/e077df04-a326-4081-a873-72c58a2ca569">
 
    
-5. Mengevaluasi kualitas assembly dengan quast
+4. **Mengevaluasi kualitas assembly dengan quast**
 
    ```
    cd ~/Bioinformatics-User-Meeting/template_submision
@@ -222,7 +220,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    <img width="1104" alt="Screenshot 2024-05-05 at 21 18 10" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/0754f487-470f-422f-9511-d24df99a3da7">
 
 
-6. Akses database lokal untuk bioinformatics
+5. **Akses database lokal untuk bioinformatics**
    ```
    ### list database yang sudah ada (tidak dipakai untuk training hanya informasi)
    ls /mgpfs/db/bioinformatics
@@ -231,7 +229,7 @@ Hal yang perlu diperhatikan sebelum hands-on
 
    Silahkan untuk melakukan permohonan penambahan database dengan mengirimkan email dengan judul "Database Bioinformatics", sertakan juga link database
 
-7. Melakukan anotasi dengan prokka
+6. **Melakukan anotasi dengan prokka**
    ```
    cd ~/Bioinformatics-User-Meeting/template_submision
    sbatch annotation.sh
@@ -241,7 +239,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    <img width="501" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/5503011d-49d1-4ded-a074-fd3295efccd6">
 
 
-8. Visualisasi anotasi dengan IGV
+7. **Visualisasi anotasi dengan IGV**
 
    - Download IGV di laptop masing-masing: https://igv.org/doc/desktop/#DownloadPage/
    - Transfer folder annotation dari HPC ke folder di laptop masing-masing seperti contoh sebelumnya
