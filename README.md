@@ -204,14 +204,17 @@ sbatch assembly.sh
 <img width="633" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/b7c60f78-03ac-4752-b9cb-cbbb73fd89cc">
 
 4. Assessing assembly quality with quast
+
 5. Akses database lokal untuk bioinformatics
 ```
 ### list database yang sudah ada (tidak dipakai untuk training hanya informasi)
 ls /mgpfs/db/bioinformatics
 ```
-<img width="792" alt="Screenshot 2024-05-05 at 19 37 05" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/571a36e0-49a9-4d15-9e07-2f0a8402ba48">
+<img width="580" alt="Screenshot 2024-05-05 at 20 09 49" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/c73acd11-1c5c-42d5-b246-3160962559ff">
 
-Silahkan untuk request penambahan database dengan mengirimkan email dengan judul "Database Bioinformatics", sertakan juga link database
+Silahkan untuk melakukan permohonan penambahan database dengan mengirimkan email dengan judul "Database Bioinformatics", sertakan juga link database
+
 6. Generating annotation with prokka
+
 7. Visualization with IGV
 
