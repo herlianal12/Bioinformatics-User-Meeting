@@ -2,7 +2,7 @@
 07 Mei 2024
 
 Instructors:
-Lina Herliana, Zahra Noviana, Syam Budi Iryanto, Ihsan Nugraha, dan Aditya Swardiana
+Lina Herliana, Zahra Noviana, Syam Budi Iryanto, dan Aditya Swardiana
 
 Email: hpc@brin.go.id (bantuan ELSA) atau hpc.admin@brin.go.id (bantuan teknis)
 
@@ -16,22 +16,23 @@ Hal yang perlu diperhatikan sebelum hands-on
 
 ### **Overview**
 **Getting ready**
-1. Login \
-2. Creating screen session \
-3. Clonning repository \
-4. Creating environment and installing packages \
-5. Creating directories \
-6. Viewing directory structure \
-7. Accesing local databases \
-8. Preparing script for submission
+1. Login
+2. Creating screen session
+3. Clonning repository
+4. Creating environment and installing packages
+5. Creating directories
+6. Viewing directory structure
+7. Accesing local databases
+8. Obtaining raw data
+9. Assessing quality of raw data with fastqc and multiqc
+10. Downloading results
 
-**Unicyler assembly tutorial**
-9. Obtaining raw data \
-10. Assesing quality of raw data with fastqc and multiqc \
-11. Generating assembly with unicycler \
-12. Assessing assembly quality with quast \
-13. Generating annotation with prokka \
-14. Visualization with IGV
+**OPTIONAL Unicyler assembly tutorial**
+
+1. Generating assembly with unicycler
+2. Assessing assembly quality with quast
+3. Generating annotation with prokka
+4. Visualization with IGV
 
 
 **Tahapan**:
@@ -55,17 +56,17 @@ screen -dr training
 ```
 git clone https://github.com/BRIN-HPC/Bioinformatics-User-Meeting.git
 ```
-4. Membuat environment (tempat menginstall software) di akun user menggunakan Anaconda3 (conda) atau Miniforge3 (mamba dan conda)
+4. Membuat environment (tempat menginstall software) di akun user menggunakan Miniforge3 (mamba dan conda)
 
 https://anaconda.org/search
 
 ```
-###module load bioinformatics/anaconda3/2023.09-0
+module avail
 module load bioinformatics/miniforge3/24.3.0-0
-conda create -n training_qc
-conda init
+mamba create -n training_qc
+mamba init
 source ~/.bashrc
-conda activate training_qc
+mamba activate training_qc
 
 ###
 mamba install -c bioconda fastqc multiqc tree
