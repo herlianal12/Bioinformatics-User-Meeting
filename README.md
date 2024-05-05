@@ -156,8 +156,8 @@ Hasil:
 ```
 cd ~/Bioinformatics-User-Meeting/training/quality_control
 ls
-#illumina_f_fastqc.html  illumina_f_fastqc.zip  illumina_r_fastqc.html  illumina_r_fastqc.zip  minion_2d_fastqc.html  minion_2d_fastqc.zip  multiqc_data  multiqc_report.html
 ```
+<img width="594" alt="Screenshot 2024-05-05 at 20 14 12" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/83d72052-42d0-4c89-b4ca-90eb663ff2f2">
 
 
 10. Transfer data dari HPC Mahameru BRIN ke lokal
@@ -169,16 +169,17 @@ mkdir html
 mv *.html html/
 cd html
 ls
-#illumina_f_fastqc.html  illumina_r_fastqc.html  minion_2d_fastqc.html  multiqc_report.html
 ```
 
-Buka terminal atau powershell yang baru untuk transfer file
+<img width="516" alt="Screenshot 2024-05-05 at 20 16 08" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/0f951437-bff9-419d-85b0-908d94dd5ccb">
 
+Buka terminal atau powershell yang baru untuk transfer file
 ```
 #contoh:
 scp -r lina008@login2.hpc.brin.go.id:~/Bioinformatics-User-Meeting/training/quality_control/html Downloads
-#Buka masing-masing html file dengan double klik maka akan muncul report qc dari masing-masing sampel
+#Buka masing-masing html file dengan double klik maka akan muncul report qc dari masing-masing sampel di folder Downloads
 ```
+
 
 **OPTIONAL Unicyler assembly tutorial**
 
