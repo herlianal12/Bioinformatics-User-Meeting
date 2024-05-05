@@ -15,7 +15,7 @@ Hal yang perlu diperhatikan sebelum hands-on
 2. Laptop
 3. Akses Internet
 
-### **Overview**
+## **Overview**
 **Persiapan and Evaluasi kualitas hasil sekuensing (QC)**
 1. Masuk ke HPC (Login)
 2. Membuat screen session
