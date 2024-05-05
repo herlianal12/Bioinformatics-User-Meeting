@@ -16,13 +16,13 @@ Hal yang perlu diperhatikan sebelum hands-on
 
 ### **Overview**
 **Getting ready**
-1. Login
-2. Creating screen session
-3. Clonning repository
-4. Creating environment and installing packages
-5. Creating directories
-6. Viewing directory structure
-7. Accesing local databases
+1. Login \
+2. Creating screen session \
+3. Clonning repository \
+4. Creating environment and installing packages \
+5. Creating directories \
+6. Viewing directory structure \
+7. Accesing local databases \
 8. Preparing script for submission
 
 **Unicyler assembly tutorial**
