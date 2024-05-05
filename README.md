@@ -10,7 +10,7 @@ Email: hpc@brin.go.id (bantuan ELSA) atau hpc.admin@brin.go.id (bantuan teknis)
 Tujuan: Pengguna HPC khususnya bidang bioinformatics dapat memanfaatkan fasilitas komputasi secara maksimal
 
 Hal yang perlu diperhatikan sebelum hands-on
-1. Akun HPC Mahameru BRIN (daftar melalui https://elsa.brin.go.id/layanan/index/%20HPC%20untuk%20%20Bioinformatika%20/6393)
+1. Akun HPC Mahameru BRIN Gen 4 (daftar melalui https://elsa.brin.go.id/layanan/index/%20HPC%20untuk%20%20Bioinformatika%20/6393)
 2. Komputer/Laptop
 3. Akses Internet
 
@@ -29,10 +29,12 @@ Hal yang perlu diperhatikan sebelum hands-on
 
 **OPTIONAL Unicyler assembly tutorial**
 
-1. Generating assembly with unicycler
-2. Assessing assembly quality with quast
-3. Generating annotation with prokka
-4. Visualization with IGV
+1. Installing more packages
+2. Creating directories
+3. Generating assembly with unicycler
+4. Assessing assembly quality with quast
+5. Generating annotation with prokka
+6. Visualization with IGV
 
 
 **Tahapan**:
@@ -54,7 +56,7 @@ screen -dr training
 ```
 3. Mengkloning repository pelatihan
 ```
-git clone https://github.com/BRIN-HPC/Bioinformatics-User-Meeting.git
+git clone git@github.com:hpc-mahameru/Bioinformatics-User-Meeting.git
 ```
 4. Membuat environment (tempat menginstall software) di akun user menggunakan Miniforge3 (mamba dan conda)
 
@@ -72,7 +74,7 @@ mamba activate training_qc
 mamba install -c bioconda fastqc multiqc tree
 ### user sudah bisa menggunakan softwarenya
 ### untuk melihat software apa saja dan versi berapa yang sudah terinstall
-conda list
+mamba list
 ```
 Untuk lebih mendetail dapat dipelajari link berikut https://conda.io/projects/conda/en/latest/user-guide/getting-started.html
 dan https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf
@@ -81,6 +83,7 @@ dan https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3
 5. Membuat folder projek untuk menyimpan data input dan output
 
 ```
+pwd
 cd Bioinformatics-User-Meeting
 mkdir -p training
 cd training
