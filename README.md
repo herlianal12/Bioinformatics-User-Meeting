@@ -11,33 +11,32 @@ Link to powerpoint: ????
 Tujuan: Pengguna HPC khususnya bidang bioinformatics dapat memanfaatkan fasilitas komputasi secara maksimal
 
 Hal yang perlu diperhatikan sebelum hands-on
-1. Akun HPC Mahameru BRIN Gen 4 (daftar melalui https://elsa.brin.go.id/layanan/index/%20HPC%20untuk%20%20Bioinformatika%20/6393)
-2. Komputer/Laptop
+1. Akun aktif HPC Mahameru BRIN Gen 4 (daftar melalui https://elsa.brin.go.id/layanan/index/%20HPC%20untuk%20%20Bioinformatika%20/6393)
+2. Laptop
 3. Akses Internet
 
 ### **Overview**
-**Getting ready and Assessing QC**
-1. Login
-2. Creating screen session
-3. Clonning repository
-4. Creating environment and installing packages
-5. Creating directories
-6. Viewing directory structure
-7. Accesing local databases
-8. Obtaining raw data
-9. Submitting job to assessing quality of raw data with fastqc and multiqc
-10. Interactive job
-11. Transferring results to local computer
+**Persiapan and Evaluasi kualitas hasil sekuensing (QC)**
+1. Masuk ke HPC (Login)
+2. Membuat screen session
+3. Mengkloning repositori
+4. Membuat environment and menginstall packages/software
+5. Membuat direktori
+6. Melihat struktur direktori
+8. Mengunduh data mentah (raw data)
+9. Mengirimkan job dengan sbatch
+10. Menggunakan interaktif job
+11. Mentransfer atau mengunduh file dari HPC ke komputer user
 
 **OPTIONAL Unicyler assembly tutorial**
 
-1. Installing packages
-
-2. Creating directories
-3. Generating assembly with unicycler
-4. Assessing assembly quality with quast
-5. Generating annotation with prokka
-6. Visualization with IGV
+1. Membuat environment baru dan menginstall packages/software
+2. Membuat direktori baru
+3. Melakukan assembly dengan unicycler
+4. Mengevaluasi kualitas assembly dengan quast
+5. Mengakses database lokal
+6. Melakukan anotasi dengan prokka
+7. Mengvisualisasikan hasil dengan IGV
 
 
 **Tahapan**:
@@ -63,7 +62,7 @@ git clone git@github.com:hpc-mahameru/Bioinformatics-User-Meeting.git
 ```
 4. Membuat environment (tempat menginstall software) di akun user menggunakan Miniforge3 (mamba dan conda)
 
-https://anaconda.org/search
+Tools atau software bioinformatics dapat dilihat pada https://anaconda.org/search
 
 ```
 module avail
@@ -101,16 +100,7 @@ cd ~
 ```
 tree Bioinformatics-User-Meeting
 ```
-
-Bioinformatics-User-Meeting
-|-- README.md
-|-- template_submision
-|   `-- contoh.sh
-`-- training
-    |-- quality_control
-    `-- raw_data
-
-5 directories, 2 files
+<img width="209" alt="Screenshot 2024-05-05 at 19 32 48" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/86f77bdf-ae97-4e5d-bbfc-f0d2bc2782a7">
 
 
 7. Akses database lokal untuk bioinformatics
