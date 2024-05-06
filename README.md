@@ -75,6 +75,9 @@ Hal yang perlu diperhatikan sebelum hands-on
    ###
    mamba install -c bioconda fastqc multiqc tree
    ### Confirm changes: [Y/n] Y
+   ### Keluar dari mode interactive
+   exit
+   mamba activate training_qc
    ### untuk melihat software apa saja dan versi berapa yang sudah terinstall
    mamba list
    ### untuk mengecek apakah tools sudah bisa digunakan
@@ -86,8 +89,7 @@ Hal yang perlu diperhatikan sebelum hands-on
 
 5. **Membuat folder projek untuk menyimpan data input dan output**
    ```
-   pwd
-   cd Bioinformatics-User-Meeting
+   cd ~/Bioinformatics-User-Meeting
    mkdir -p training
    cd training
    mkdir raw_data quality_control
