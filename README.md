@@ -48,7 +48,8 @@ Hal yang perlu diperhatikan sebelum hands-on
    ```
    <img width="587" alt="Screenshot 2024-05-05 at 19 38 04" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/f0b88b62-582b-4574-b894-fdf129bab0c4">
 
-2. **Menggunakan bantuan screen untuk membuat beberapa sesi dan mempertahankan sesi yang ada walau koneksi terputus. User dapat menggunakan aplikasi lain seperti tmux.**
+2. **Menggunakan bantuan screen untuk membuat beberapa sesi dan mempertahankan sesi yang ada walau koneksi terputus.** \
+   User dapat menggunakan aplikasi lain seperti tmux
    ```
    ### Membuat screen session
    screen -S training
@@ -60,7 +61,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    ```
    git clone git@github.com:hpc-mahameru/Bioinformatics-User-Meeting.git
    ```
-4. **Membuat environment (tempat menginstall software) di akun user menggunakan Miniforge3 (mamba dan conda)**
+4. **Membuat environment (tempat menginstall software) di akun user menggunakan Miniforge3 (mamba dan conda)** \
    Tools atau software bioinformatics dapat dilihat pada https://anaconda.org/search
    ```
    module avail
@@ -98,7 +99,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    ```
    <img width="209" alt="Screenshot 2024-05-05 at 19 32 48" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/86f77bdf-ae97-4e5d-bbfc-f0d2bc2782a7">
 
-7. **Mengunduh data mentah dengan wget**
+7. **Mengunduh data mentah dengan wget** \
    source: https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
    waktu unduh data < 13 menit
    ```
@@ -108,7 +109,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    wget https://zenodo.org/record/940733/files/minion_2d.fq -P Bioinformatics-User-Meeting/training/raw_data
    ```
 
-8. **Mengirimkan job untuk mengevaluasi kualitas dengan sbatch**
+8. **Mengirimkan job untuk mengevaluasi kualitas hasil sekuensing**
    ```
    cd ~
    cd Bioinformatics-User-Meeting/template_submision
@@ -146,7 +147,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    <img width="594" alt="Screenshot 2024-05-05 at 20 14 12" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/83d72052-42d0-4c89-b4ca-90eb663ff2f2">
 
 
-10. **Transfer data dari HPC Mahameru BRIN ke lokal**
+10. **Transfer data dari HPC Mahameru BRIN ke lokal** \
     Memindahkan file html ke folder baru dengan nama html
     ```
     cd ~/Bioinformatics-User-Meeting/training/quality_control
