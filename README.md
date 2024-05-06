@@ -64,6 +64,7 @@ Hal yang perlu diperhatikan sebelum hands-on
 4. **Membuat environment (tempat menginstall software) di akun user menggunakan Miniforge3 (mamba dan conda)** \
    Tools atau software bioinformatics dapat dilihat pada https://anaconda.org/search
    ```
+   srun --partition=interactive --cpus-per-task=2 --pty bash
    module avail
    module load bioinformatics/miniforge3/24.3.0-0
    mamba create -n training_qc
