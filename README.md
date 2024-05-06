@@ -164,7 +164,7 @@ Hal yang perlu diperhatikan sebelum hands-on
     scp -r lina008@login2.hpc.brin.go.id:~/Bioinformatics-User-Meeting/training/quality_control/html Downloads
     ```
 
-    Buka masing-masing html file dengan double klik maka akan muncul report qc dari masing-masing sampel di folder Downloads
+    Buka masing-masing html file dengan double klik report qc dari masing-masing sampel yang di folder Downloads.
 
     Fastqc short read
     <img width="1438" alt="Screenshot 2024-05-05 at 20 38 59" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/17c2f071-662e-428e-8275-78eb28114ded">
