@@ -243,7 +243,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    - Transfer file assembly.fasta dari HPC ke folder di laptop masing-masing seperti contoh sebelumnya
    - Buka software IGV dengan double click icon IGV
    - Pilih Genomes --> Load Genome from file --> pilih assembly.fasta
-   - Pilih File --> Load from file --> pilih PROKKA_05052024.gff
+   - Pilih File --> Load from file --> pilih gff file contoh PROKKA_05052024.gff
      <img width="1330" alt="image" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/c788d652-348f-468c-bf6b-e6513b90b999">
 
 
