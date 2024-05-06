@@ -59,7 +59,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    ```
 3. **Mengkloning repository pelatihan**
    ```
-   git clone git@github.com:hpc-mahameru/Bioinformatics-User-Meeting.git
+   git clone https://github.com/hpc-mahameru/Bioinformatics-User-Meeting.git
    ```
 4. **Membuat environment (tempat menginstall software) di akun user menggunakan Miniforge3 (mamba dan conda)** \
    Tools atau software bioinformatics dapat dilihat pada https://anaconda.org/search
