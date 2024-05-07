@@ -130,7 +130,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    Gunakan perintah ```wget``` untuk mengunduh data.
    
    ```
-   cd <tekan enter/return> ## perintah untuk kembali ke home dir
+   cd 
    wget https://zenodo.org/record/940733/files/illumina_f.fq -P Bioinformatics-User-Meeting/training/raw_data
    wget https://zenodo.org/record/940733/files/illumina_r.fq -P Bioinformatics-User-Meeting/training/raw_data
    wget https://zenodo.org/record/940733/files/minion_2d.fq -P Bioinformatics-User-Meeting/training/raw_data
