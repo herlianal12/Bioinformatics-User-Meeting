@@ -8,7 +8,7 @@ Email: hpc@brin.go.id (bantuan ELSA) atau hpc.admin@brin.go.id (bantuan teknis)
 
 Link presentasi: https://drive.google.com/drive/folders/1XSDXYvWGN1saVsgDPoDMpmMk7uRjNj2j?usp=share_link
 
-Tujuan: Pengguna HPC khususnya bidang bioinformatics dapat memanfaatkan fasilitas komputasi secara maksimal
+Tujuan: Pengguna HPC khususnya bidang bioinformatika dapat memanfaatkan fasilitas komputasi secara maksimal
 
 Hal yang perlu diperhatikan sebelum hands-on
 1. Akun aktif HPC Mahameru BRIN Gen 4 (daftar melalui https://elsa.brin.go.id/layanan/index/%20HPC%20untuk%20%20Bioinformatika%20/6393)
