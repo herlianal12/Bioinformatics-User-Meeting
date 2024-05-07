@@ -116,15 +116,15 @@ Hal yang perlu diperhatikan sebelum hands-on
    <img width="209" alt="Screenshot 2024-05-05 at 19 32 48" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/86f77bdf-ae97-4e5d-bbfc-f0d2bc2782a7">
 
 8. **Mengunduh data mentah dengan wget** \
-   source: https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
-   waktu unduh data < 13 menit
+   Gunakan perintah ```wget``` untuk mengunduh data.
+   
    ```
-   cd ~
+   cd <tekan enter/return> ## perintah untuk kembali ke home dir
    wget https://zenodo.org/record/940733/files/illumina_f.fq -P Bioinformatics-User-Meeting/training/raw_data
    wget https://zenodo.org/record/940733/files/illumina_r.fq -P Bioinformatics-User-Meeting/training/raw_data
    wget https://zenodo.org/record/940733/files/minion_2d.fq -P Bioinformatics-User-Meeting/training/raw_data
    ```
-
+   source: https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
 9. **Mengirimkan job untuk mengevaluasi kualitas hasil sekuensing**
    ```
    cd ~
