@@ -207,7 +207,7 @@ Hal yang perlu diperhatikan sebelum hands-on
 
 
 
-## **OPTIONAL Unicyler assembly tutorial**
+## **OPTIONAL Unicycler assembly tutorial**
 
 1. **Membuat environment baru dan menginstall software untuk assembly**
    ```
