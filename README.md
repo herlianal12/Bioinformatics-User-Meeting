@@ -136,6 +136,9 @@ Hal yang perlu diperhatikan sebelum hands-on
 9. **Menggunakan interaktif job submission**
     ```
     srun --partition=interactive --pty /bin/bash
+    ```
+    Perhatikan nama host-nya, berubah menjadi trembesi91/92
+    ```
     mamba activate training_qc
     cd Bioinformatics-User-Meeting/training/quality_control
     multiqc .
