@@ -6,7 +6,7 @@ Lina Herliana, Zahra Noviana, Syam Budi Iryanto, dan Aditya Swardiana
 
 Email: hpc@brin.go.id (bantuan ELSA) atau hpc.admin@brin.go.id (bantuan teknis)
 
-Link presentasi: https://drive.google.com/drive/folders/1XSDXYvWGN1saVsgDPoDMpmMk7uRjNj2j?usp=share_link
+Link presentasi: https://drive.google.com/drive/folders/1XSDXYvWGN1saVsgDPoDMpmMk7uRjNj2j 
 
 Tujuan: Pengguna HPC khususnya bidang bioinformatika dapat memanfaatkan fasilitas komputasi secara maksimal
 
