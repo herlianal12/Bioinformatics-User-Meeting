@@ -84,16 +84,27 @@ Hal yang perlu diperhatikan sebelum hands-on
    ```
    Install aplikasi yang digunakan: fastqc, multiqc, dan tree.
    ```
-
-   ###
    mamba install -c bioconda fastqc multiqc tree
+   ```
+   ```
    ### Confirm changes: [Y/n] Y
-   ### Keluar dari mode interactive
+   ```
+   Keluar dari mode interactive
+   ```
    exit
+   ```
+
+   Aktifkan environment bernama training_qc
+   ```
    mamba activate training_qc
-   ### untuk melihat software apa saja dan versi berapa yang sudah terinstall
+   ```
+   Untuk melihat software apa saja dan versi berapa yang sudah terinstall
+   ```
    mamba list
-   ### untuk mengecek apakah tools sudah bisa digunakan
+   ```
+   
+   Untuk mengecek apakah tools sudah bisa digunakan
+   ```
    fastqc --help
    multiqc --help
    ```
