@@ -65,6 +65,10 @@ Hal yang perlu diperhatikan sebelum hands-on
    Tools atau software bioinformatics dapat dilihat pada https://anaconda.org/search
    ```
    srun --partition=interactive --cpus-per-task=2 --pty bash
+   ```
+   Jika berhasil, Anda akan berpindah ke node interaktif (trembesi91/92).
+   Terdapat banyak module/software yang dapat digunakan, gunakan perintah ```module avail``` untuk melihatnya.
+   ```
    module avail
    module load bioinformatics/miniforge3/24.3.0-0
    mamba create -n training_qc
@@ -87,7 +91,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    Untuk lebih mendetail dapat dipelajari link berikut https://conda.io/projects/conda/en/latest/user-guide/getting-started.html dan https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf
 
 
-5. **Membuat folder projek untuk menyimpan data input dan output**
+6. **Membuat folder projek untuk menyimpan data input dan output**
    ```
    cd ~/Bioinformatics-User-Meeting
    mkdir -p training
@@ -96,13 +100,13 @@ Hal yang perlu diperhatikan sebelum hands-on
    cd ~
    ```
 
-6. **Melihat struktur direktori**
+7. **Melihat struktur direktori**
    ```
    tree Bioinformatics-User-Meeting
    ```
    <img width="209" alt="Screenshot 2024-05-05 at 19 32 48" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/86f77bdf-ae97-4e5d-bbfc-f0d2bc2782a7">
 
-7. **Mengunduh data mentah dengan wget** \
+8. **Mengunduh data mentah dengan wget** \
    source: https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
    waktu unduh data < 13 menit
    ```
@@ -112,7 +116,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    wget https://zenodo.org/record/940733/files/minion_2d.fq -P Bioinformatics-User-Meeting/training/raw_data
    ```
 
-8. **Mengirimkan job untuk mengevaluasi kualitas hasil sekuensing**
+9. **Mengirimkan job untuk mengevaluasi kualitas hasil sekuensing**
    ```
    cd ~
    cd Bioinformatics-User-Meeting/template_submision
@@ -133,7 +137,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    <img width="495" alt="Screenshot 2024-05-05 at 19 59 36" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/5e0aa0e9-ffec-4dc7-ac11-1e8d52897614">
 
 
-9. **Menggunakan interaktif job submission**
+10. **Menggunakan interaktif job submission**
     ```
     srun --partition=interactive --pty /bin/bash
     ```
@@ -153,7 +157,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    <img width="594" alt="Screenshot 2024-05-05 at 20 14 12" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/83d72052-42d0-4c89-b4ca-90eb663ff2f2">
 
 
-10. **Transfer data dari HPC Mahameru BRIN ke lokal** \
+11. **Transfer data dari HPC Mahameru BRIN ke lokal** \
     Memindahkan file html ke folder baru dengan nama html
     ```
     cd ~/Bioinformatics-User-Meeting/training/quality_control
