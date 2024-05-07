@@ -153,12 +153,11 @@ Hal yang perlu diperhatikan sebelum hands-on
    squeue
    ```
    <img width="495" alt="Screenshot 2024-05-05 at 19 59 36" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/5e0aa0e9-ffec-4dc7-ac11-1e8d52897614">
-   
-   ```
+    
    cd ~
    cd Bioinformatics-User-Meeting/training/quality_control
    ls
-   ```
+   
 10. **Menggunakan interaktif job submission**
     ```
     srun --partition=interactive --pty /bin/bash
