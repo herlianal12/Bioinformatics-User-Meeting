@@ -70,11 +70,20 @@ Hal yang perlu diperhatikan sebelum hands-on
    Terdapat banyak module/software yang dapat digunakan, gunakan perintah ```module avail``` untuk melihatnya.
    ```
    module avail
+   ```
+   Untuk workshop ini, aktifkan environment module dengan mamba. Untuk itu, load module miniforge3/24.3.0-0 terlebih dahulu.
+   ```
    module load bioinformatics/miniforge3/24.3.0-0
+   ```
+   Gunakan perintah ```mamba``` untuk mengaktifkan environment aplikasi yang akan digunakan. 
+   ```
    mamba create -n training_qc
    mamba init
    source ~/.bashrc
    mamba activate training_qc
+   ```
+   Install aplikasi yang digunakan: fastqc, multiqc, dan tree.
+   ```
 
    ###
    mamba install -c bioconda fastqc multiqc tree
