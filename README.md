@@ -28,7 +28,7 @@ Hal yang perlu diperhatikan sebelum hands-on
 9. Menggunakan interaktif job submission
 10. Mentransfer atau mengunduh file dari HPC ke komputer user
 
-**OPTIONAL Unicyler assembly tutorial**
+**OPTIONAL Unicycler assembly tutorial**
 
 1. Membuat environment baru dan menginstall packages/software
 2. Membuat direktori baru
