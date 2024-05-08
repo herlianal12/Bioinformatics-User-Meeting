@@ -1,4 +1,5 @@
 
+
 # Bioinformatics User Meeting
 07 Mei 2024
 
@@ -45,7 +46,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    ```
    ssh <username>@login2.hpc.brin.go.id
    ```
-   <img width="587" alt="Screenshot 2024-05-05 at 19 38 04" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/f0b88b62-582b-4574-b894-fdf129bab0c4">
+   [//]: <img width="587" alt="Screenshot 2024-05-05 at 19 38 04" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/f0b88b62-582b-4574-b894-fdf129bab0c4">
 
 2. **Menggunakan bantuan screen untuk membuat beberapa sesi dan mempertahankan sesi yang ada walau koneksi terputus.** \
    User dapat menggunakan aplikasi lain seperti tmux
@@ -85,13 +86,6 @@ Hal yang perlu diperhatikan sebelum hands-on
    ```
    mamba install -c bioconda fastqc multiqc tree
    ```
-   ```
-   ### Confirm changes: [Y/n] Y
-   ```
-   Keluar dari mode interactive
-   ```
-   exit
-   ```
 
    Aktifkan environment bernama training_qc
    ```
@@ -109,7 +103,7 @@ Hal yang perlu diperhatikan sebelum hands-on
    ```
    Untuk lebih mendetail dapat dipelajari link berikut https://conda.io/projects/conda/en/latest/user-guide/getting-started.html dan https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf
 
-5. **Membuat folder projek untuk menyimpan data input dan output**
+5. **Membuat folder proyek untuk menyimpan data input dan output**
    ```
    cd ~/Bioinformatics-User-Meeting
    mkdir -p training
@@ -125,16 +119,39 @@ Hal yang perlu diperhatikan sebelum hands-on
 
 7. **Mengunduh data mentah dengan wget**
    Gunakan perintah ```wget``` untuk mengunduh data.
-   
+   Sebelumnya, kembali ke home terlebih dahulu
    ```
-   cd 
+   cd
+   ```
+   Download raw data untuk training.
+   ```
    wget https://zenodo.org/record/940733/files/illumina_f.fq -P Bioinformatics-User-Meeting/training/raw_data
    wget https://zenodo.org/record/940733/files/illumina_r.fq -P Bioinformatics-User-Meeting/training/raw_data
    wget https://zenodo.org/record/940733/files/minion_2d.fq -P Bioinformatics-User-Meeting/training/raw_data
+   
    ```
    source: https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
-   
-8. **Mengirimkan job untuk mengevaluasi kualitas hasil sekuensing**
+
+8. **Bekerja dengan mode interaktif**
+   ```
+   srun --partition=interactive --pty /bin/bash
+   ```
+   Perhatikan nama host-nya, berubah menjadi trembesi91/92
+   ```
+   mamba activate training_qc
+   cd Bioinformatics-User-Meeting/training/quality_control
+   multiqc .
+   exit
+   ```
+
+   Hasil:
+   ```
+   cd ~/Bioinformatics-User-Meeting/training/quality_control
+   ls
+   ```
+   <img width="594" alt="Screenshot 2024-05-05 at 20 14 12" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/83d72052-42d0-4c89-b4ca-90eb663ff2f2">
+
+9. **Bekerja dengan menggunakan skrip job**
 
    ```
    cd ~
@@ -154,28 +171,8 @@ Hal yang perlu diperhatikan sebelum hands-on
    cd Bioinformatics-User-Meeting/training/quality_control
    ls
    ```
-      
-
-9. **Menggunakan interaktif job submission**
-    ```
-    srun --partition=interactive --pty /bin/bash
-    ```
-    Perhatikan nama host-nya, berubah menjadi trembesi91/92
-    ```
-    mamba activate training_qc
-    cd Bioinformatics-User-Meeting/training/quality_control
-    multiqc .
-    exit
-    ```
-
-   Hasil:
-   ```
-   cd ~/Bioinformatics-User-Meeting/training/quality_control
-   ls
-   ```
-   <img width="594" alt="Screenshot 2024-05-05 at 20 14 12" src="https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/assets/57382343/83d72052-42d0-4c89-b4ca-90eb663ff2f2">
    
-10. **Transfer data dari HPC Mahameru BRIN ke lokal** \
+11. **Transfer data dari HPC Mahameru BRIN ke lokal**
     Memindahkan file html ke folder baru dengan nama html
     ```
     cd ~/Bioinformatics-User-Meeting/training/quality_control
